@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jidori tool</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <button type="button" id="shutter">📷[Space]</button>
+      Timer
+      <input type="number" id="timer" value="1" min="0" max="5" step="1" />Sec.
+    </header>
+    <div class="wrapper">
+      <video id="camera" width="600" height="400"></video>
+      <div class="canvas-wrapper">
+        <canvas id="picture" width="600" height="400"></canvas>
+        <div id="countdown"></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
